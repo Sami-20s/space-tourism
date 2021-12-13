@@ -1,9 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
+import { ContextTypes } from "../types/context";
+import { navLinks } from "./navList/navList";
 
-const ContextApp = React.createContext({});
-
+const ContextApp: ContextTypes = React.createContext({ navLinks });
 const ContextProvider = ({ children }) => {
-    return <ContextApp.Provider value={"sami"}>{children}</ContextApp.Provider>;
+    const [isLinkClick, setIsLinkClick] = useState("");
+    return (
+        <ContextApp.Provider
+            value={{
+                navLinks,
+            }}
+        >
+            {children}
+        </ContextApp.Provider>
+    );
 };
 
 export const useGlobal = () => {
