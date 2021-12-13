@@ -1,16 +1,43 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&family=Poppins:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+
+/* Variables */
+:root {
+    --dark-blue: hsl(230, 35%, 7%);
+    --gray: hsl(231, 77%, 90%);
+    --dark-gray: #85868b;
+    --white: hsl(0, 0%, 100%);
+    /* fonts */
+    --belle: "Bellefair", serif;
+    --barl-c: "Barlow Condensed", sans-serif;
+    --barl: "Barlow", sans-serif;
+    /* Transitions */
+    --tra: all 0.3s ease;
+}
+
+/* Global Style */
 html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+body,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    font-family: var(--barl-c);
+    font-weight: 400;
+    overflow-x: hidden;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul li,
+ul {
+    list-style: none;
 }
