@@ -26,7 +26,6 @@ body,
     margin: 0;
     font-family: var(--barl-c);
     font-weight: 400;
-    overflow-x: hidden;
 }
 
 a {
