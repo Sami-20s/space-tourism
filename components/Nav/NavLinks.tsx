@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import { NavLinksStyle } from "../../styles/Nav.style";
+import { NavLinksStyle } from "../../styles/NavStyle/Nav.style";
 import { NavLinksProps } from "../../types/Nav/NavTypes";
 import NavSingleLink from "./NavSingleLink";
 
