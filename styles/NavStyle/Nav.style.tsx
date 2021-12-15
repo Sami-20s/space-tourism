@@ -86,10 +86,29 @@ export const NavLinksStyle = styled.ul`
         }
     }
     li {
+        width: 100%;
+        position: relative;
         margin-bottom: 2rem;
         position: relative;
         letter-spacing: 3px;
         cursor: pointer;
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 3px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: calc(100% + 5px);
+            left: calc(100% + 29px);
+            transition: var(--tra);
+            background-color: transparent;
+            cursor: initial;
+        }
+        &:hover::before {
+            background-color: var(--dark-gray);
+        }
+
         &.active {
             transition: var(--tra);
             &::before {
@@ -100,29 +119,19 @@ export const NavLinksStyle = styled.ul`
             }
         }
         @media ${media.meduim} {
+            width: unset;
             margin-bottom: 0;
             &::before {
-                content: "";
-                position: absolute;
-                display: block;
                 width: 100%;
                 height: 3px;
+                left: unset;
+                top: unset;
+                transform: unset;
                 bottom: -37px;
-                transition: var(--tra);
-                background-color: transparent;
                 cursor: initial;
             }
             &:hover::before {
                 background-color: var(--dark-gray);
-            }
-            &.active {
-                transition: var(--tra);
-                &::before {
-                    background-color: var(--white);
-                }
-                &:hover::before {
-                    background-color: var(--white);
-                }
             }
         }
         span {
