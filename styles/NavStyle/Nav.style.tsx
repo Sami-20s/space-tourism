@@ -92,6 +92,7 @@ export const NavLinksStyle = styled.ul`
         position: relative;
         letter-spacing: 3px;
         cursor: pointer;
+        transition: var(--tra);
         &::before {
             content: "";
             position: absolute;
@@ -108,7 +109,9 @@ export const NavLinksStyle = styled.ul`
         &:hover::before {
             background-color: var(--dark-gray);
         }
-
+        &:hover {
+            color: var(--gray);
+        }
         &.active {
             transition: var(--tra);
             &::before {
@@ -116,6 +119,9 @@ export const NavLinksStyle = styled.ul`
             }
             &:hover::before {
                 background-color: var(--white);
+            }
+            &:hover {
+                color: var(--white);
             }
         }
         @media ${media.meduim} {
