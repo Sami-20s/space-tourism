@@ -26,9 +26,9 @@ export const HeroButtonStyle = styled.button`
     color: var(--dark-blue);
     background-color: var(--white);
     transition: var(--tra);
-    box-shadow: 0px 0px 0px 0 var(--dark-blue);
+    box-shadow: 0px 0px 0px 0 rgba(255, 255, 255, 0.1);
     &:hover {
-        box-shadow: 0px 0px 0px 45px var(--dark-blue);
+        box-shadow: 0px 0px 0px 45px rgba(255, 255, 255, 0.1);
     }
     /* Tablet Screen */
     @media ${media.meduim} {
@@ -36,7 +36,7 @@ export const HeroButtonStyle = styled.button`
         height: 15.125rem;
         font-size: 2rem;
         &:hover {
-            box-shadow: 0px 0px 0px 70px var(--dark-blue);
+            box-shadow: 0px 0px 0px 70px rgba(255, 255, 255, 0.1);
         }
     }
     /* Large Screen */
@@ -45,7 +45,7 @@ export const HeroButtonStyle = styled.button`
         height: 17.125rem;
         cursor: pointer;
         &:hover {
-            box-shadow: 0px 0px 0px 5.5rem var(--dark-blue);
+            box-shadow: 0px 0px 0px 5.5rem rgba(255, 255, 255, 0.1);
         }
     }
 `;
