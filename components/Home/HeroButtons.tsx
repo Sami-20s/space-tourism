@@ -2,7 +2,7 @@ import React from "react";
 import {
     HeroButtonsStyle,
     HeroButtonStyle,
-} from "../../styles/HeroStyle/HeroButtons.style";
+} from "../../styles/HomeStyle/HeroButtons.style";
 
 const HeroButtons = () => {
     return (

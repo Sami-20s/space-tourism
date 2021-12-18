@@ -1,5 +1,5 @@
 import React from "react";
-import { HeroTextStyle } from "../../styles/HeroStyle/HeroText.style";
+import { HeroTextStyle } from "../../styles/HomeStyle/HeroText.style";
 
 const HeroText = () => {
     return (
