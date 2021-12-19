@@ -1,4 +1,5 @@
 import React, { FC, useState } from "react";
+import { useGlobal } from "../../context/context";
 import { NavLinksStyle } from "../../styles/NavStyle/Nav.style";
 import { NavLinksProps } from "../../types/Nav/NavTypes";
 import NavSingleLink from "./NavSingleLink";
@@ -8,7 +9,7 @@ const NavLinks: FC<NavLinksProps> = ({
     setIsBurgerClick,
     isBurgerClick,
 }) => {
-    const [click, setClick] = useState("00");
+    const { click, setClick } = useGlobal();
     return (
         <NavLinksStyle position={isBurgerClick}>
             <img

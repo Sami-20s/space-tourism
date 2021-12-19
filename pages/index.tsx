@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "../components/Home/Hero";
-import { HeroStyle } from "../styles/HeroStyle/Hero.style";
+import { useGlobal } from "../context/context";
+import { HeroStyle } from "../styles/HomeStyle/Hero.style";
 
 const Home = () => {
+    const { setClick } = useGlobal();
+    useEffect(() => {
+        setClick("00");
+    });
     return (
         <>
             <main>
